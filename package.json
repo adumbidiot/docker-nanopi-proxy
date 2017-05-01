@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/adumbidiot/docker-nanopi-proxy/issues"
   },
-  "homepage": "https://github.com/adumbidiot/docker-nanopi-proxy#readme"
+  "homepage": "https://github.com/adumbidiot/docker-nanopi-proxy#readme",
+  "dependencies": {
+    "http-proxy":"^1.16.2"
+  }
 }

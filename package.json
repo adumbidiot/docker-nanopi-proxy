@@ -1,0 +1,23 @@
+{
+  "name": "nanopi-proxy",
+  "version": "1.0.0",
+  "description": "proxy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adumbidiot/docker-nanopi-proxy.git"
+  },
+  "keywords": [
+    "proxy",
+    "nanopi"
+  ],
+  "author": "nano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adumbidiot/docker-nanopi-proxy/issues"
+  },
+  "homepage": "https://github.com/adumbidiot/docker-nanopi-proxy#readme"
+}

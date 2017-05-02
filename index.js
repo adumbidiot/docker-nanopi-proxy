@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const http = require('http');
 const httpProxy = require('http-proxy');
-const proxy = httpProxy.createProxyServer({});
+const proxy = httpProxy.createProxyServer({ secure: false });
 const server = http.createServer(app);
 
 app.use(function(req, res, next){

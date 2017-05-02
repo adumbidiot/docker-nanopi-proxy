@@ -14,6 +14,7 @@ app.use(function(req, res, next){
 app.use(function(req, res, next){
   if(req.query.url){
    proxy.web(req, res, { target: req.query.url });
+    console.log('Proxying');
   }
 });
 

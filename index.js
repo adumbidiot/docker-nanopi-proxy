@@ -8,10 +8,13 @@ const server = http.createServer(app);
 app.use(function(req, res, next){
   console.log(req.path);
   console.log(req.query.url);
+  next();
 });
 
 app.use(function(req, res, next){
-  proxy.web(req, res, { target: req.query.url });
+  if(req.query.url){
+   proxy.web(req, res, { target: req.query.url });
+  }
 });
 
 server.listen('8080');

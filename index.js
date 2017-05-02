@@ -5,6 +5,10 @@ const httpProxy = require('http-proxy');
 const proxy = httpProxy.createProxyServer({ secure: false });
 const server = http.createServer(app);
 
+proxy.on('error', function(e) {
+  console.log(e);
+});
+  
 app.use(function(req, res, next){
   console.log(req.path);
   console.log(req.query.url);
